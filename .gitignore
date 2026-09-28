@@ -1,0 +1,26 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Coldstart's own state when it is run against this repository.
+# Committing it would check in evidence and approval records as source.
+.coldstart/
+
+# Build and local-release leftovers.
+.hypothesis/
+build/
+dist/
+*.egg-info/
+_not-public/
+
+# Release-review files. They are not part of the public repository;
+# publish only the paths listed in PUBLIC-FILE-MANIFEST.json.
+PUBLIC-RELEASE-REPORT.md
+PUBLIC-FILE-MANIFEST.json
